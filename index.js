@@ -12,7 +12,7 @@ function getLatinCharacterList (text){
 
 function translateLatinCharacter (letter){
     // j'ai essayé la boucle for of mais apparemment mauvaise idée pour un objet.
-    // honnêtement sans chatGPT je ne sais pas combien de temps j'aurais mis à trouver cette syntaxe pour for of
+    // honnêtement sans chatGPT je n'aurais pas trouvé cette syntaxe pour for of avec un objet
     for (let [key, value] of Object.entries(latinToMorse)) {
         if (key === letter) {
             //console.log(value) OK
@@ -21,4 +21,17 @@ function translateLatinCharacter (letter){
     }
     }
 
-translateLatinCharacter("G")
+function encode(text){
+    //dans cette fonction j'ai besoin d'un paramètre d'entrée
+    let items = getLatinCharacterList (text)
+    //console.log(getLatinCharacterList(text))
+    //ok à ce stade ma fonction renvoie mon texte en caractères latins
+    items.forEach(item => {
+        console.log(translateLatinCharacter(item))
+ })
+}
+    encode("GG")
+
+ //je peux découper un mot ou une phrase en lettres
+ //j'obtiens un tableau dont je veux parcourir les index pour créer la correspondance
+ 

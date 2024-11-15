@@ -22,16 +22,14 @@ function translateLatinCharacter (letter){
     }
 
 function encode(text){
-    //dans cette fonction j'ai besoin d'un paramètre d'entrée
-    let items = getLatinCharacterList (text)
+    let upperText = text.toUpperCase(); 
+    let items = getLatinCharacterList(upperText);
+    let words = //mon mot après concaténation de la boucle foreach
     //console.log(getLatinCharacterList(text))
-    //ok à ce stade ma fonction renvoie mon texte en caractères latins
+    //ok à ce stade ma fonction renvoie bien mon texte en caractères latins
     items.forEach(item => {
         console.log(translateLatinCharacter(item))
  })
 }
-    encode("GG")
-
- //je peux découper un mot ou une phrase en lettres
- //j'obtiens un tableau dont je veux parcourir les index pour créer la correspondance
- 
+    encode("ggggggg")
+//ok mais il faut maintenant rassembler tout ça !!

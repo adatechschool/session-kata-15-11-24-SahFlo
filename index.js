@@ -1,5 +1,6 @@
-import {const latinToMorse} from alphabet_latin_morse.js
-
+import { latinToMorse } from './alphabet_latin_morse.js';
+//presque... j'avais du mal à écrire la ligne pour l'import, je me suis fait aider...
+console.log(latinToMorse)
 
 // prend en paramètre du texte et retourne un tableau
 function getLatinCharacterList (text){

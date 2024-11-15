@@ -1,3 +1,6 @@
+import {const latinToMorse} from alphabet_latin_morse.js
+
+
 // prend en paramètre du texte et retourne un tableau
 function getLatinCharacterList (text){
  return text.split("")

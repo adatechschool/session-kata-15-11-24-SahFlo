@@ -1,14 +1,11 @@
-import { latinToMorse } from './alphabet_latin_morse.js';
-//presque... j'avais du mal à écrire la ligne pour l'import, je me suis fait aider...
+import { latinToMorse } from './alphabet_latin_morse.js'; //presque... dur d'écrire la ligne import, je me suis fait aider...
 //console.log(latinToMorse)
 //console.log(latinToMorse.A)
 
-// prend en paramètre du texte et retourne un tableau
 function getLatinCharacterList (text){
- return text.split("")
+ return text.split("") //J'ai trouvé split grâce à la doc mdn mais j'ai galéré à l'appliquer
 }
 //console.log(getLatinCharacterList("Hello World")) ok
-//J'ai trouvé split grâce à la doc mdn mais j'ai galéré à l'appliquer
 
 function translateLatinCharacter (letter){
     // j'ai essayé la boucle for of mais apparemment mauvaise idée pour un objet.
@@ -19,7 +16,7 @@ function translateLatinCharacter (letter){
             return value
         }
     }
-    }
+}
 
 function encode(text){
     let upperText = text.toUpperCase(); 
